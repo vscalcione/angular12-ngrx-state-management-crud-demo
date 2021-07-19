@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { Store } from '@ngrx/store';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  title = 'angular12-ngrx-state-management-crud-demo';
-}
+import { Movie } from './models/movie';
+import { DataService } from './services/data.service';
+import { MovieActions } from "./stores/actions/movie.action";
+
+MovieActions.getMo
